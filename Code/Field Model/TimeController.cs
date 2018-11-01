@@ -3,7 +3,7 @@
 //*******           Copyright (C) 2010-2018              *******//
 //*******           Team: Wuhan University               *******//
 //*******           Developer:Xuequan Zhang              *******//
-//*******           EMail:brucezhang@whu.edu.cn          *******//
+//*******           Email:xuequan_zhang@126.com         *******//
 //*******           Address: 129 Luoyu Road, Wuhan,      *******//
 //*******                    Hubei, 430079, China        *******//
 //**************************************************************//

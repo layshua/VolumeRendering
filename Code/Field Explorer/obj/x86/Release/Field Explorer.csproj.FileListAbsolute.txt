@@ -278,3 +278,6 @@ E:\123\VolumeRendering\Bin32\Field Explorer.pdb
 E:\123\VolumeRendering\Code\Field Explorer\obj\x86\Release\Field Explorer.pdb
 E:\123\VolumeRendering\Bin32\Volume Rendering.exe.config
 E:\123\VolumeRendering\Bin32\FieldExplorer.exe.config
+E:\Source\GitHub\VolumeRendering\Bin32\Field Explorer.exe.config
+E:\Source\GitHub\VolumeRendering\Code\Field Explorer\obj\x86\Release\Field Explorer.exe
+E:\Source\GitHub\VolumeRendering\Code\Field Explorer\obj\x86\Release\Field Explorer.pdb
