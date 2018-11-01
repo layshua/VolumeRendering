@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gaeaServerview xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <builderentry>
+      <builderdirectory name="GAEA服务(0个中的0个可用)" specialcontainer="GAEAServers" />
+    </builderentry>
+    <builderentry />
+    <builderentry>
+      <builderdirectory name="WMS服务(0个中的0个可用)" specialcontainer="WMSServers" />
+    </builderentry>
+  </servers>
+  <cameraorientation lat="37.8624637257099" lon="112.536787388833" altitude="791.875" heading="-96.7974056098136" tilt="0" />
+</gaeaServerview>

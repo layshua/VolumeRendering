@@ -1,0 +1,12 @@
+<sceneObjectTemplates>
+		<templateGroup id="Node">
+			<templates>
+				<sceneNode id="SceneNode"/>
+				<cameraTemplate id="Camera"/>
+				<lwdSceneTemplate id="LwdScene"/>
+				<regionTemplate id="Region"/>
+			</templates>
+		</templateGroup>
+</sceneObjectTemplates>
+
+

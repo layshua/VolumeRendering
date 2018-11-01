@@ -1,0 +1,11 @@
+<lwdScenes>
+	<lwdScene id="MainScene" mode="Physical" camera="MainCamera">
+		<nodes>
+			<region id="Pond">
+				<nodes>
+					<camera id="MainCamera" />
+				</nodes>
+			</region>
+		</nodes>
+	</lwdScene>
+</lwdScenes>

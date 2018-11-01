@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{606548FB-EF6F-4687-90C5-9483D55F7A1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FieldModel</RootNamespace>
+    <AssemblyName>Field Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\Bin32\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugSymbols>false</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MathUtilities.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="TimeController.cs" />
+    <Compile Include="VolumeRendering\DVRBase.cs" />
+    <Compile Include="VolumeRendering\DVRSpherical.cs" />
+    <Compile Include="VolumeRendering\DVRTextured3D.cs" />
+    <Compile Include="VolumeRendering\Renderer.cs" />
+    <Compile Include="VolumeRendering\VolumeBrick.cs" />
+    <Compile Include="VolumeRendering\VolumeRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Gaea.LostWorld.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Gaea.LostWorld.EntitySystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Gaea.LostWorld.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Gaea.LostWorld.RenderSystems.DirectX9, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Gaea.LostWorld.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Gaea.LostWorld.Vision, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaCarto, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaDisplay, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaGeoDatabase, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaGeometry, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaSystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="gaeaUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="SlimDX, Version=2.0.11.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin32\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="wContour, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

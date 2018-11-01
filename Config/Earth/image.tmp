@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LayerSet Name="影像" ShowOnlyOneLayer="true" ShowAtStartup="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LayerSet.xsd">
+  <ImageLayer ShowAtStartup="true">
+    <Name>全球概图</Name>
+    <DistanceAboveSurface>-1000</DistanceAboveSurface>
+    <BoundingBox>
+      <North>
+        <Value>90.0</Value>
+      </North>
+      <South>
+        <Value>-90.0</Value>
+      </South>
+      <West>
+        <Value>-180.0</Value>
+      </West>
+      <East>
+        <Value>180.0</Value>
+      </East>
+    </BoundingBox>
+    <TexturePath>http://192.168.1.248:80/GaeaIISServer/StartData/Earth/Startup.jpg</TexturePath>
+    <Opacity>255</Opacity>
+    <TerrainMapped>false</TerrainMapped>
+  </ImageLayer>
+  <ChildLayerSet Name="卫星影像" ShowOnlyOneLayer="true" ShowAtStartup="true" RenderPriority="TerrainMappedImages">
+    <QuadTileSet ShowAtStartup="true" UseWorldMainPyramidTileSet="true">
+      <Name>基础影像</Name>
+      <DistanceAboveSurface>0</DistanceAboveSurface>
+      <NodataValue>0</NodataValue>
+      <BoundingBox>
+        <North>
+          <Value>85.0511287798066</Value>
+        </North>
+        <South>
+          <Value>-85.0516912005793</Value>
+        </South>
+        <West>
+          <Value>-179.999999999987</Value>
+        </West>
+        <East>
+          <Value>180.002951447326</Value>
+        </East>
+      </BoundingBox>
+      <TerrainMapped>true</TerrainMapped>
+      <ImageAccessor>
+        <LevelZeroTileSizeDegrees>36</LevelZeroTileSizeDegrees>
+        <NumberLevels>18</NumberLevels>
+        <TextureSizePixels>256</TextureSizePixels>
+        <ImageFileExtension>PNG</ImageFileExtension>
+        <ImageTileService>
+          <ServerUrl>http://192.168.1.248:80/GaeaIISServer/TileDownload.aspx</ServerUrl>
+          <DataSetName>EarthDOM</DataSetName>
+          <CacheExpirationTime>
+            <Days>7</Days>
+            <Hours>0</Hours>
+            <Mins>0</Mins>
+            <Seconds>0</Seconds>
+          </CacheExpirationTime>
+          <ServerLogoFilePath>Data\Icons\Interface\meatball.png</ServerLogoFilePath>
+        </ImageTileService>
+      </ImageAccessor>
+      <ExtendedInformation>
+        <ToolBarImage>Data\Icons\Interface\nlt-landsat-visible.png</ToolBarImage>
+      </ExtendedInformation>
+    </QuadTileSet>
+  </ChildLayerSet>
+</LayerSet>

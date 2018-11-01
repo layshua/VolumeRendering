@@ -1,0 +1,80 @@
+<realms>
+	<realm id="GaeaSceneSystem" camera="MainCamera">
+		<nodes>
+			<region id="Pond">
+				<nodes>
+					<camera id="MainCamera" pos="(0,0,200)"/>
+					<node id="PoolNode">
+						<nodes>
+							<light id="MainLight" type="Directional" direction="(0,-1,0)" />
+							<ent id="Pond.Pillar1" ref="Architecture.Pillar1"/>
+							<ent id="Pond.Pillar2" ref="Architecture.Pillar2"/>
+							<ent id="Pond.Pillar3" ref="Architecture.Pillar3"/>
+							<ent id="Pond.Pillar4" ref="Architecture.Pillar4"/>
+							<ent id="Pond.PoolRim" ref="Architecture.UpperSurround"/>
+							<waterRef id="PoolWater" ref="Pool" pos="(0,-20,0)">
+								<nodes>
+									<ent id="Pond.PoolSide" ref="Architecture.LowerSurround">
+										<nodes>
+											<ent id="Pond.Fish1" ref="Creatures.Fish"/>
+											<ent id="Pond.Fish2" ref="Creatures.Fish"/>
+											<ent id="Pond.Fish3" ref="Creatures.Fish"/>
+											<ent id="Pond.PoolFloor" ref="Architecture.PoolFloor"/>
+										</nodes>
+									</ent>
+								</nodes>
+							</waterRef>
+						</nodes>
+					</node>
+					<ent id="Dragon" ref="Creatures.Dragon" pos="(100,100,10)"/>
+					<ent id="OgreHead" ref="Special.OGREHead" pos="(100,0,10)"/>
+					<ent id="Athene" ref="Statues.Athene" pos="(10,50,10)"/>
+					<ent id="Car" ref="Vehicles.Ferrari" pos="(100,0,200)"/>
+					<ent id="SpaceShip" ref="Vehicles.SpaceShip" pos="(300,100,200)"/>
+					<ent id="Pond.WeatheredTree" ref="Environment.WeatheredTree" pos="(10,10,10)"/>
+					<ent id="Pond.Smithy" ref="Buildings.Smithy" pos="(1000,0,1000)"/>
+					<ent id="Pond.Mill" ref="Buildings.Mill" pos="(-1000,0,1000)"/>
+					<ent id="Pond.Cottage" ref="Buildings.Cottage" pos="(1000,0,-1000)" ori="[0,180,0]"/>
+					<ent id="Pond.Tavern" ref="Buildings.Tavern" pos="(-2000,0,-2000)"/>
+				</nodes>
+			</region>
+		</nodes>
+	</realm>
+	<realm id="RealmOfMagicPhysics" mode="Physical" camera="PhysicsCamera">
+		<nodes>
+			<region id="Pond2">
+				<nodes>
+					<camera id="PhysicsCamera" pos="(0,0,200)"/>
+					<ent id="OgreHead2" ref="Special.OGREHead" pos="(10,200,60)"/>
+					<ent id="OgreHead2a" ref="Special.OGREHeadplus" pos="(-10,200,-60)"/>
+
+					<ent id="SpecialChain" ref="Special.Chain" pos="(-400,800,0)"/>
+					<ent id="SpecialChain2" ref="Special.Chain" pos="(-600,400,0)"/>
+					
+					<ent id="Robot" ref="Special.AnimRobot" pos="(400,400,0)"/>
+
+					<ent id="Pond.WeatheredTree2" ref="Environment.WeatheredTree" pos="(10,-210,10)"/>
+
+					<node id="PoolNode2" pos="(0,-200,0)" ori="[10,0,0]">
+						<nodes>
+							<ent id="Pond.Pillar12" ref="Architecture.Pillar1"/>
+							<ent id="Pond.Pillar22" ref="Architecture.Pillar2"/>
+							<ent id="Pond.Pillar32" ref="Architecture.Pillar3"/>
+							<ent id="Pond.Pillar42" ref="Architecture.Pillar4"/>
+							<ent id="Pond.PoolRim2" ref="Architecture.UpperSurround"/>
+							<waterRef id="PoolWater2" ref="Pool" pos="(0,-20,0)">
+								<nodes>
+									<ent id="Pond.PoolSide2" ref="Architecture.LowerSurround">
+										<nodes>
+											<ent id="PoolFloor2" ref="Architecture.PoolFloor"/>
+										</nodes>
+									</ent>
+								</nodes>
+							</waterRef>
+						</nodes>
+					</node>
+				</nodes>
+			</region>
+		</nodes>
+	</realm>
+</realms>

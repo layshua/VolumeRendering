@@ -1,0 +1,13 @@
+﻿<TerrainConfig>
+	<Terrain>镜湖.heightmap</Terrain>
+	<WorldTexture>terrain_winter_texture.jpg</WorldTexture>
+	<DetailTexture>dirt01.jpg</DetailTexture>
+	<DetailTile>1</DetailTile>
+	<TileSize>17</TileSize>
+	<MaxPixelError>8</MaxPixelError>
+	<ScaleX>100</ScaleX>
+	<ScaleY>100</ScaleY>
+	<ScaleZ>100</ScaleZ>
+	<MaxMipMapLevel>1</MaxMipMapLevel>
+	<VertexNormals>yes</VertexNormals>
+</TerrainConfig>
